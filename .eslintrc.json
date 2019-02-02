@@ -1,0 +1,28 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "atomtest": true
+    },
+    "extends": ["eslint:recommended", "standard"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "camelcase": "error",
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "no-console": ["error", { "allow": ["info", "warn", "error"] }],
+        "semi": ["error", "never"],
+        "space-before-function-paren": "off"
+    },
+    "globals": {
+        "atom": "readable",
+        "beforeEach": "readable",
+        "describe": "readable",
+        "expect": "readable",
+        "it": "readable",
+        "jasmine": "readable",
+        "runs": "readable"
+    }
+}
