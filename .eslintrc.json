@@ -20,8 +20,10 @@
         "atom": "readable",
         "beforeEach": "readable",
         "describe": "readable",
+        "xdescribe": "readable",
         "expect": "readable",
         "it": "readable",
+        "xit": "readable",
         "jasmine": "readable",
         "runs": "readable"
     }

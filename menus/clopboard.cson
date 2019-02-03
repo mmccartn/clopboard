@@ -1,0 +1,36 @@
+'context-menu':
+    '.atom-workspace': [
+        {
+            'label': 'Separator',
+            'command': '-'
+        },
+        {
+            'label': 'Copy',
+            'command': 'clopboard:copy'
+        },
+        {
+            'label': 'Paste',
+            'command': 'core:paste'
+        },
+        {
+            'label': 'Paste History',
+            'command': 'clopboard:paste'
+        },
+        {
+            'label': 'Separator',
+            'command': '-'
+        }
+    ]
+
+'menu': [
+    {
+        'label': 'Packages'
+        'submenu': [
+            'label': 'Clopboard'
+            'submenu': [
+                { 'label': 'Copy', 'command': 'clopboard:copy' }
+                { 'label': 'Paste', 'command': 'clopboard:paste' }
+            ]
+        ]
+    }
+]

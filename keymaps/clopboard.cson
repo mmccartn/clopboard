@@ -1,0 +1,9 @@
+'.platform-darwin, body':
+    'cmd-c': 'clopboard:copy'
+'.platform-darwin, atom-workspace atom-text-editor':
+    'cmd-shift-V': 'clopboard:paste'
+
+'.platform-win32, .platform-linux, body':
+    'ctrl-c': 'clopboard:copy'
+'.platform-win32, .platform-linux, atom-workspace atom-text-editor':
+    'ctrl-shift-V': 'clopboard:paste'
