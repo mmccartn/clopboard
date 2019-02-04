@@ -4,13 +4,7 @@
     "version": "0.1.0",
     "description": "Clipboard history that pops",
     "keywords": [],
-    "activationCommands": {
-        "atom-workspace": [
-            "clopboard:copy",
-            "clopboard:paste"
-        ]
-    },
-    "repository": "https://github.com/atom/clopboard",
+    "repository": "git@github.com:mmccartn/clopboard.git",
     "license": "MIT",
     "engines": {
         "atom": ">=1.0.0 <2.0.0"
@@ -21,7 +15,7 @@
         "lint-fix": "eslint . --fix"
     },
     "dependencies": {
-        "atom-space-pen-views": "^2.0.3"
+        "atom-select-list": "^0.7.2"
     },
     "devDependencies": {
         "eslint": "^5.13.0",

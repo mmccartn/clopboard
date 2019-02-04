@@ -11,34 +11,12 @@ describe('Clopboard', () => {
         activationPromise = atom.packages.activatePackage('clopboard')
     })
 
-    describe('when the clopboard:toggle event is triggered', () => {
-        it('hides and shows the modal panel', () => {
-            // Before the activation event the view is not on the DOM, and no panel
-            // has been created
-            expect(workspaceElement.querySelector('.clopboard')).not.toExist()
-
-            // This is an activation event, triggering it will cause the package to be
-            // activated.
-            atom.commands.dispatch(workspaceElement, 'clopboard:toggle')
-
-            waitsForPromise(() => {
-                return activationPromise
-            })
-
-            runs(() => {
-                expect(workspaceElement.querySelector('.clopboard')).toExist()
-
-                let clopboardElement = workspaceElement.querySelector('.clopboard')
-                expect(clopboardElement).toExist()
-
-                let clopboardPanel = atom.workspace.panelForItem(clopboardElement)
-                expect(clopboardPanel.isVisible()).toBe(true)
-                atom.commands.dispatch(workspaceElement, 'clopboard:toggle')
-                expect(clopboardPanel.isVisible()).toBe(false)
-            })
+    describe('when the clopboard:copy event is triggered', () => {
+        it('copys', () => {
+            atom.commands.dispatch(workspaceElement, 'clopboard:copy')
         })
 
-        it('hides and shows the view', () => {
+        xit('hides and shows the view', () => {
             // This test shows you an integration test testing at the view level.
 
             // Attaching the workspaceElement to the DOM is required to allow the
